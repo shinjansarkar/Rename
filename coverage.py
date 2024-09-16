@@ -5,7 +5,7 @@ def coverage(path_name, user_name):  # Function
 
     for filename in os.listdir(path_name):  # Iterate over the files in the folder
         old_name = os.path.join(path_name, filename)  # Set the old name
-        new_name = os.path.join(path_name, user_name + str(count) + '.jpg')  # Set the new name and extension
+        new_name = os.path.join(path_name, user_name+"_" + str(count) + '.jpg')  # Set the new name and extension
         os.rename(old_name, new_name)  # Rename from old name to new name
         count += 1  # Iterate +1
 
